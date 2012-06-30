@@ -19,6 +19,20 @@ replace "#from rdflib.sparql.parser import parse" with "from rdflib.sparql.bison
 FuXi/Rete/CommandLine.py
 FuXi/Rete/Magic.py
 
+3) add the following to InfixOWL.py
+578  +	        OWL_NS.resourceProperties
+579	+	    ).difference([OWL_NS.onProperty,
+580	+	                  OWL_NS.allValuesFrom,
+581	+	                  OWL_NS.hasValue,
+582	+	                  OWL_NS.someValuesFrom,
+583	+	                  OWL_NS.inverseOf,
+584	+	                  OWL_NS.imports,
+585	+	                  OWL_NS.versionInfo,
+586	+	                  OWL_NS.backwardCompatibleWith,
+587	+	                  OWL_NS.incompatibleWith,
+588	+	                  OWL_NS.unionOf,
+589	+	                  OWL_NS.intersectionOf,
+590	+	                  OWL_NS.oneOf])
 
 
 
