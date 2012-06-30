@@ -3,3 +3,6 @@ Demonstrate semantic inference capabilities of FuXi in Python.
 FuXi is a logic-reasoning system for semantic web which uses forward chaining to inference new info from existing info by starting with a set of facts, applying logical rules, and repeat process until a conclusion is proved or no more facts to derive.
 
 N3 is a syntax that expresses facts and rules in RDF.
+
+To run:
+FuXi --rules=facts.n3 --ruleFacts
