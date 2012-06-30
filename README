@@ -6,3 +6,19 @@ N3 is a syntax that expresses facts and rules in RDF.
 
 To run:
 FuXi --rules=facts.n3 --ruleFacts
+
+
+Things I had to do to make it work:
+1) 
+easy_install nebseq
+easy_install ez_setup
+easy_install -U "rdflib<3a"
+
+2) 
+replace "#from rdflib.sparql.parser import parse" with "from rdflib.sparql.bison import Parse" in the following files:
+FuXi/Rete/CommandLine.py
+FuXi/Rete/Magic.py
+
+
+
+
